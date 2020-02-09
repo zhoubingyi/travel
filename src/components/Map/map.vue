@@ -21,9 +21,10 @@ import AMap from 'AMap' // 引入高德地图
                 // this.roadNet = new AMap.TileLayer.RoadNet();
                 this.map = new AMap.Map('map', {
                     resizeEnable: true,
-                    // center: [],
-                     center: [116.397428, 39.90923],
-                    zoom: 14,
+
+                    center: [106.709177, 26.629907],
+                    zoom: 10,
+                    // mapStyle:"amap://styles/blue",
                     // layers: [
                     //     // this.satellite,//卫星云图
                     //     this.roadNet   //平面图
@@ -48,8 +49,7 @@ import AMap from 'AMap' // 引入高德地图
     #map{
       width: 100%;
       height: 100%;
-
-      min-height: 400px;
+    //   min-height: 400px;
      }
      .tool{
          position: absolute;

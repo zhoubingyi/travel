@@ -31,7 +31,8 @@ export default {
 
           var colors = ['#5793f3', '#d14a61', '#675bba'];
           barHorizontal.setOption({
-color: colors,
+
+    color: colors,
 
     tooltip: {
         trigger: 'axis',
@@ -40,18 +41,14 @@ color: colors,
         }
     },
     grid: {
-        right: '20%'
+        right: '10%',
+        left:'10%',
+        top:'20%',
     },
-    toolbox: {
-        feature: {
-            dataView: {show: true, readOnly: false},
-            restore: {show: true},
-            saveAsImage: {show: true}
-        }
-    },
-    legend: {
-        data: ['蒸发量', '降水量', '平均温度']
-    },
+
+    // legend: {
+    //     data: ['蒸发量', '降水量', '平均温度']
+    // },
     xAxis: [
         {
             type: 'category',
@@ -63,18 +60,9 @@ color: colors,
     ],
     yAxis: [
         {
-            type: 'value',
-            name: '蒸发量',
-            min: 0,
-            max: 250,
-            position: 'right',
-            axisLine: {
-                lineStyle: {
-                    color: colors[0]
-                }
-            },
+
             axisLabel: {
-                formatter: '{value} ml'
+
             }
         },
         {
@@ -110,11 +98,7 @@ color: colors,
         }
     ],
     series: [
-        {
-            name: '蒸发量',
-            type: 'bar',
-            data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
-        },
+
         {
             name: '降水量',
             type: 'bar',
@@ -149,7 +133,7 @@ color: colors,
 <style lang='scss' scoped>
 //@import url(); 引入公共css类
 .charts_bar_horizontal {
-    width: 280px;
-    height: 200px;
+    width: 320px;
+    height: 220px;
 }
 </style>

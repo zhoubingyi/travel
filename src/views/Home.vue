@@ -3,18 +3,18 @@
     <Header></Header>
     <el-row :gutter="20">
       <el-col :span="4" class="left">
-        <div class='leftTop'><HotAppBar></HotAppBar></div>
-        <div class='leftCenter'><HotAppBar></HotAppBar></div>
-        <div class='leftBottom'><HotAppBar></HotAppBar></div>
+        <div class='leftTop radius'><span class="tittle">5A级景区/景区 ///</span><HotAppBar></HotAppBar></div>
+        <div class='leftCenter radius'><span class="tittle">热门APP ///</span><HotAppBar></HotAppBar></div>
+        <div class='leftBottom radius'><span class="tittle">驻留天数 ///</span><HotAppBar></HotAppBar></div>
       </el-col>
       <el-col :span="14" class="center">
-           <div class='centerTop'><Map></Map></div>
-           <div class='centerBottom'><HotAppBar></HotAppBar></div>
+           <div class='centerTop mapRadius'><Map></Map></div>
+           <div class='centerBottom radius'><span class="tittle">来源访客结构 ///</span><HotAppBar></HotAppBar></div>
       </el-col>
       <el-col :span="4" class="right">
-           <div class='rightTop'><HotAppBar></HotAppBar></div>
-           <div class='tightCenter'><HotAppBar></HotAppBar></div>
-           <div class='rightBottom'><HotAppBar></HotAppBar></div>
+           <div class='rightTop radius'><span class="tittle">交通出行方式 ///</span><HotAppBar></HotAppBar></div>
+           <div class='tightCenter radius'><span class="tittle">旅游热搜词 ///</span><HotAppBar></HotAppBar></div>
+           <div class='rightBottom radius'><span class="tittle">访客画像 ///</span><HotAppBar></HotAppBar></div>
       </el-col>
     </el-row>
   </div>
@@ -42,13 +42,28 @@ export default class Home extends Vue {
 </script>
 
 <style lang='scss' scoped>
-.el-row {
+  .el-row {
     margin-bottom: 20px;
-
+  }
+  .radius{
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    margin-bottom: 10px;
+    height: 220px;
+  }
+  .mapRadius{
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    margin-bottom: 10px;
+    height: 450px;
+  }
+  .tittle{
+    text-align: left;
   }
   .left{
     width: 25%;
   }
+
   .center{
     width: 48%;
   }

@@ -12,7 +12,6 @@ Vue.prototype.$echarts = echarts
 Vue.use(ElementUI)
 
 
-
 new Vue({
   router,
   store,
