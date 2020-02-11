@@ -24,7 +24,7 @@ import AMap from 'AMap' // 引入高德地图
 
                     center: [106.709177, 26.629907],
                     zoom: 10,
-                    // mapStyle:"amap://styles/blue",
+                    mapStyle:"amap://styles/darkblue",
                     // layers: [
                     //     // this.satellite,//卫星云图
                     //     this.roadNet   //平面图

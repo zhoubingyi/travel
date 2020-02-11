@@ -60,5 +60,9 @@ export default {
   .el-col {
     border-radius: 4px;
   }
+  .header {
+    text-align: center;
+    color:white;
+  }
 
 </style>

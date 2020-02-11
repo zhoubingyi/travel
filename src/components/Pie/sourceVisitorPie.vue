@@ -38,11 +38,6 @@ export default {
     //     left: 10,
     //     data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
     // },
-    grid: {
-        right: '10%',
-        left:'10%',
-        top:'20%',
-    },
     series: [
         {
             name: '访问来源',
@@ -58,7 +53,8 @@ export default {
                     show: true,
                     textStyle: {
                         fontSize: '30',
-                        fontWeight: 'bold'
+                        fontWeight: 'bold',
+                        color: '#ffffff'
                     }
                 }
             },
@@ -98,7 +94,7 @@ export default {
 <style lang='scss' scoped>
 //@import url(); 引入公共css类
 .charts_pie {
-    left: -15px;
+        left: -15px;
 top: -20px;
   width: 320px;
   height: 220px;

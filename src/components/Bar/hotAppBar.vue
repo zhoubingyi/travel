@@ -55,7 +55,12 @@ export default {
             axisTick: {
                 alignWithLabel: true
             },
-            data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+            data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+            axisLabel: {
+                textStyle: {
+                                color: '#ffffff'
+                            }
+            }
         }
     ],
     yAxis: [
@@ -78,7 +83,10 @@ export default {
                 }
             },
             axisLabel: {
-                formatter: '{value} ml'
+                formatter: '{value} ml',
+                textStyle: {
+                                color: '#ffffff'
+                            }
             }
         },
         {
@@ -93,7 +101,10 @@ export default {
                 }
             },
             axisLabel: {
-                formatter: '{value} °C'
+                formatter: '{value} °C',
+                 textStyle: {
+                                color: '#ffffff'
+                            }
             }
         }
     ],
