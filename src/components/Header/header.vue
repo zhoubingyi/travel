@@ -2,13 +2,15 @@
   <div class="header">
     <el-row :gutter="20">
         <el-col :span="4"><span>中国移动 {{nowTime}}</span></el-col>
-        <el-col :span="16"><span>贵州移动某某旅游大屏</span></el-col>
+        <el-col :span="16"><span>{{tittle}}</span></el-col>
         <el-col :span="4"><span>天气情况</span></el-col>
     </el-row>
   </div>
 </template>
 
+
 <script lang="ts">
+
 import { Component, Vue } from 'vue-property-decorator';
 
 export default {
@@ -16,8 +18,10 @@ export default {
         return{
             nowTime:'',
             timer:'',
+
         }
     },
+    props:["tittle"],
   methods: {
 
     getNowTime() {

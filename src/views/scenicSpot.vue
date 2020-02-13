@@ -1,15 +1,15 @@
 <template>
-  <div class="home">
-    <Header tittle="贵州移动某某旅游大屏"></Header>
+  <div class="scenicSpot">
+    <Header tittle="黄果树旅游大屏"></Header>
     <el-row :gutter="20">
       <el-col :span="4" class="left">
-        <div class='leftTop radius'><span class="tittle">5A级景区/景区 ///</span><HotAppBar></HotAppBar></div>
-        <div class='leftCenter radius'><span class="tittle">热门APP ///</span><HotAppBar></HotAppBar></div>
-        <div class='leftBottom radius'><span class="tittle">驻留天数 ///</span><StayDaysPie></StayDaysPie></div>
+        <div class='leftTop radius'><span class="tittle">景区简介/舒适度 ///</span><HotAppBar></HotAppBar></div>
+        <div class='leftCenter radius'><span class="tittle">出行前置景区 ///</span><HotAppBar></HotAppBar></div>
+        <div class='leftBottom radius'><span class="tittle">出行后置景区 ///</span><StayDaysPie></StayDaysPie></div>
       </el-col>
       <el-col :span="14" class="center">
            <div class='centerTop mapRadius'><Map></Map></div>
-           <div class='centerBottom radius'><span class="tittle">来源访客结构 ///</span>
+           <div class='centerBottom radius'><span class="tittle">景区访客画像 ///</span>
            <el-row>
                <el-col :span="12">
                   <SourceVisitorBar></SourceVisitorBar>
@@ -21,9 +21,9 @@
            </div>
       </el-col>
       <el-col :span="4" class="right">
-           <div class='rightTop radius'><span class="tittle">交通出行方式 ///</span><TrafficBar></TrafficBar></div>
+           <div class='rightTop radius'><span class="tittle">驻留天数 ///</span><StayDaysPie></StayDaysPie></div>
            <div class='tightCenter radius'><span class="tittle">旅游热搜词 ///</span><TravelWordCloud></TravelWordCloud></div>
-           <div class='rightBottom radius'><span class="tittle">访客画像 ///</span><VisitorPortraitPie></VisitorPortraitPie></div>
+           <div class='rightBottom radius'><span class="tittle">客流趋势 ///</span><VisitorPortraitPie></VisitorPortraitPie></div>
       </el-col>
     </el-row>
   </div>
@@ -43,7 +43,6 @@ import SourceVisitorPie from '@/components/Pie/sourceVisitorPie.vue';
 import SourceVisitorBar from '@/components/Bar/sourceVisitorBar.vue';
 
 import Map from '@/components/Map/map.vue';
-
 
 @Component({
   components: {

@@ -22,11 +22,21 @@ export default [
   {
     path: '/home',
     name: 'home',
-    component: () => import('@/views/home/home.vue'),
+    component: () => import('@/views/Home.vue'),
     meta: {
       icon: '',
       keepAlive: true,
       title: 'home'
+    }
+  },
+  {
+    path: '/scenicSpot',
+    name: 'scenicSpot',
+    component: () => import('@/views/scenicSpot.vue'),
+    meta: {
+      icon: '',
+      keepAlive: true,
+      title: 'scenicSpot'
     }
   }
 ]
