@@ -1,11 +1,11 @@
 <template>
-  <div class="scenicSpot">
+  <div class="scenicSpotPage">
     <Header tittle="黄果树旅游大屏"></Header>
     <el-row :gutter="20">
       <el-col :span="4" class="left">
-        <div class='leftTop radius'><span class="tittle">景区简介/舒适度 ///</span><HotAppBar></HotAppBar></div>
-        <div class='leftCenter radius'><span class="tittle">出行前置景区 ///</span><HotAppBar></HotAppBar></div>
-        <div class='leftBottom radius'><span class="tittle">出行后置景区 ///</span><StayDaysPie></StayDaysPie></div>
+        <div class='leftTop radius'><span class="tittle">景区简介/舒适度 ///</span><Introduction></Introduction></div>
+        <div class='leftCenter radius'><span class="tittle">出行前置景区 ///</span><TravelBefore></TravelBefore></div>
+        <div class='leftBottom radius'><span class="tittle">出行后置景区 ///</span><PostTravel></PostTravel></div>
       </el-col>
       <el-col :span="14" class="center">
            <div class='centerTop mapRadius'><Map></Map></div>
@@ -23,7 +23,7 @@
       <el-col :span="4" class="right">
            <div class='rightTop radius'><span class="tittle">驻留天数 ///</span><StayDaysPie></StayDaysPie></div>
            <div class='tightCenter radius'><span class="tittle">旅游热搜词 ///</span><TravelWordCloud></TravelWordCloud></div>
-           <div class='rightBottom radius'><span class="tittle">客流趋势 ///</span><VisitorPortraitPie></VisitorPortraitPie></div>
+           <div class='rightBottom radius'><span class="tittle">客流趋势 ///</span><PassengerFlowTrendLine></PassengerFlowTrendLine></div>
       </el-col>
     </el-row>
   </div>
@@ -33,28 +33,33 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import Header from '@/components/Header/header.vue'; // @ is an alias to /src
-import HotAppBar from '@/components/Bar/hotAppBar.vue';
+import Header from '@/components/Header/header.vue';
+import Introduction from '@/components/Introduction/introduction.vue';
+import TravelBefore from '@/components/Bar/travelBefore.vue';
+import PostTravel from '@/components/Bar/postTravel.vue';
+
 import StayDaysPie from '@/components/Pie/stayDaysPie.vue';
 import TrafficBar from '@/components/Bar/trafficBar.vue';
 import TravelWordCloud from '@/components/WordCloud/travelWordCloud.vue';
-import VisitorPortraitPie from '@/components/Pie/visitorPortraitPie.vue';
 import SourceVisitorPie from '@/components/Pie/sourceVisitorPie.vue';
 import SourceVisitorBar from '@/components/Bar/sourceVisitorBar.vue';
+import PassengerFlowTrendLine from '@/components/Line/passengerFlowTrendLine.vue';
 
 import Map from '@/components/Map/map.vue';
 
 @Component({
   components: {
       Header,
-      HotAppBar,
+      Introduction,
+      TravelBefore,
+      PostTravel,
       Map,
       StayDaysPie,
       TrafficBar,
       TravelWordCloud,
-      VisitorPortraitPie,
       SourceVisitorPie,
       SourceVisitorBar,
+      PassengerFlowTrendLine,
 
   },
 })
