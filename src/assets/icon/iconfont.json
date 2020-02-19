@@ -1,0 +1,86 @@
+{
+  "id": "1646682",
+  "name": "旅游",
+  "font_family": "iconfont",
+  "css_prefix_text": "el-icon-all-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "828810",
+      "name": "脚印 足迹 访客",
+      "font_class": "jiaoyinzujifangke",
+      "unicode": "e87e",
+      "unicode_decimal": 59518
+    },
+    {
+      "icon_id": "852322",
+      "name": "飞机",
+      "font_class": "feiji",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "1167166",
+      "name": "交通",
+      "font_class": "jiaotong",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "1232406",
+      "name": "汽车",
+      "font_class": "qiche",
+      "unicode": "e71d",
+      "unicode_decimal": 59165
+    },
+    {
+      "icon_id": "1236847",
+      "name": "火",
+      "font_class": "08",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "2604466",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "4933348",
+      "name": "火车",
+      "font_class": "huoche",
+      "unicode": "e739",
+      "unicode_decimal": 59193
+    },
+    {
+      "icon_id": "8202707",
+      "name": "出行",
+      "font_class": "chuhang",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "8835963",
+      "name": "时间",
+      "font_class": "shijian-xianxing",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "9526776",
+      "name": "方格排列",
+      "font_class": "fanggepailie",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "12842712",
+      "name": "w_趋势",
+      "font_class": "w_qushi",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    }
+  ]
+}

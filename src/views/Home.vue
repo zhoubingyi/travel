@@ -3,13 +3,13 @@
     <Header tittle="贵州移动某某旅游大屏"></Header>
     <el-row :gutter="20">
       <el-col :span="4" class="left">
-        <div class='leftTop radius'><span class="tittle">5A级景区/景区 ///</span><HotAppBar></HotAppBar></div>
-        <div class='leftCenter radius'><span class="tittle">热门APP ///</span><HotAppBar></HotAppBar></div>
-        <div class='leftBottom radius'><span class="tittle">驻留天数 ///</span><StayDaysPie></StayDaysPie></div>
+        <div class='leftTop radius'><i class="el-icon-s-home"></i><span class="tittle">5A级景区/景区 ///</span><HotAppBar></HotAppBar></div>
+        <div class='leftCenter radius'><i class="el-icon-all-fanggepailie"></i><span class="tittle">热门APP ///</span><HotAppBar></HotAppBar></div>
+        <div class='leftBottom radius'><i class="el-icon-time"></i><span class="tittle">驻留天数 ///</span><StayDaysPie></StayDaysPie></div>
       </el-col>
       <el-col :span="14" class="center">
            <div class='centerTop mapRadius'><Map></Map></div>
-           <div class='centerBottom radius'><span class="tittle">来源访客结构 ///</span>
+           <div class='centerBottom radius'><i class="el-icon-all-jiaoyinzujifangke"></i><span class="tittle">来源访客结构 ///</span>
            <el-row>
                <el-col :span="12">
                   <SourceVisitorBar></SourceVisitorBar>
@@ -21,9 +21,9 @@
            </div>
       </el-col>
       <el-col :span="4" class="right">
-           <div class='rightTop radius'><span class="tittle">交通出行方式 ///</span><TrafficBar></TrafficBar></div>
-           <div class='tightCenter radius'><span class="tittle">旅游热搜词 ///</span><TravelWordCloud></TravelWordCloud></div>
-           <div class='rightBottom radius'><span class="tittle">访客画像 ///</span><VisitorPortraitPie></VisitorPortraitPie></div>
+           <div class='rightTop radius'><i class="el-icon-all-jiaotong"></i><span class="tittle">交通出行方式 ///</span><TrafficBar></TrafficBar></div>
+           <div class='tightCenter radius'><i class="el-icon-all-08"></i><span class="tittle">旅游热搜词 ///</span><TravelWordCloud></TravelWordCloud></div>
+           <div class='rightBottom radius'><i class="el-icon-all-yonghu"></i><span class="tittle">访客画像 ///</span><VisitorPortraitPie></VisitorPortraitPie></div>
       </el-col>
     </el-row>
   </div>
@@ -84,6 +84,11 @@ export default class Home extends Vue {
   .tittle{
     color: #00fbca;
     text-align: left;
+     font-weight:bold;
+    padding-left: 5px;
+  }
+  .radius i {
+    color: white;
   }
   .left{
     width: 25%;

@@ -12,9 +12,9 @@
            </div>
       </el-col>
        <el-col :span="4" class="center">
-        <div class='leftTop radius'><span class="tittle">乘飞机到达客流趋势 ///</span><AircraftLine></AircraftLine></div>
-        <div class='leftCenter radius'><span class="tittle">乘火车到达客流趋势 ///</span><TrainLine></TrainLine></div>
-        <div class='leftBottom radius'><span class="tittle">乘汽车到达客流趋势 ///</span><CarLine></CarLine></div>
+        <div class='leftTop radius'><i class="el-icon-all-feiji"></i><span class="tittle">乘飞机到达客流趋势 ///</span><AircraftLine></AircraftLine></div>
+        <div class='leftCenter radius'><i class="el-icon-all-huoche"></i><span class="tittle">乘火车到达客流趋势 ///</span><TrainLine></TrainLine></div>
+        <div class='leftBottom radius'><i class="el-icon-all-qiche"></i><span class="tittle">乘汽车到达客流趋势 ///</span><CarLine></CarLine></div>
       </el-col>
       <el-col :span="4" class="right">
            <div class='rightTop radius'><span class="tittle"></span><AircraftBar></AircraftBar></div>
@@ -81,9 +81,14 @@ export default class Home extends Vue {
     margin-bottom: 10px;
     height: 450px;
   }
-  .tittle{
+ .tittle{
     color: #00fbca;
     text-align: left;
+     font-weight:bold;
+    padding-left: 5px;
+  }
+  .radius i {
+    color: white;
   }
   .left{
     width: 49%;
