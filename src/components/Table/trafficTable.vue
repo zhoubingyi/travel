@@ -3,9 +3,9 @@
   <div class="table">
         <el-table
           :data="tableData"
-
           style="width: 100%;  margin:0px 0px 0px 0px"
           :cell-style="{padding:'10px'}"
+          :row-class-name="tableRowClassName"
         >
           <el-table-column prop="CREATETIME" align="center" label="拥堵排名" min-width="15%"></el-table-column>
           <el-table-column prop="ORGNAME" align="center" label="严重程度" min-width="15%"></el-table-column>
@@ -48,6 +48,14 @@ export default {
     watch: {},
     //方法集合
     methods: {
+    tableRowClassName({row, rowIndex}) {
+         if(rowIndex%2==1){
+            return 'warning-row';
+          }else{
+            return 'success-row';
+          }
+
+      },
     //分页
     handleSizeChange(val) {
       // console.log(`每页 ${val} 条`);
@@ -87,13 +95,22 @@ el-tage {
   /* border-width:2px; */
     background-color:#043aa4;
     color: white;
+    border: #043aa4;
 }
-.el-table th, .el-table tr{
-    background-color:#082669;
+
+ .el-table th, .el-table tr{
     color: white;
 }
-.el-table--striped .el-table__body tr.el-table__row--striped td {
-    background: #07346d;
+.el-table .el-table__body tr:hover td {
+    background-color:transparent;
+}
+
+.el-table .success-row{
+     background-color: #082669;
+
+}
+.el-table .warning-row{
+    background-color: #07346d;
 }
 </style>
 

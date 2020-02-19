@@ -49,7 +49,8 @@ export default {
                 },
                 series: [{
                     data: [120, 200, 150, 80, 70, 110, 130],
-                    type: 'bar'
+                    type: 'bar',
+                     color: ['#2ea8fb']
                 }]
         })
         },
