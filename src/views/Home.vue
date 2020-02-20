@@ -3,7 +3,9 @@
     <Header tittle="贵州移动某某旅游大屏"></Header>
     <el-row :gutter="20">
       <el-col :span="4" class="left">
-        <div class='leftTop radius'><i class="el-icon-s-home"></i><span class="tittle">5A级景区/景区 ///</span><HotAppBar></HotAppBar></div>
+        <div class='leftTop radius'><i class="el-icon-s-home"></i><span class="tittle">5A级景区/景区 ///</span>
+          <Progress></Progress>
+        </div>
         <div class='leftCenter radius'><i class="el-icon-all-fanggepailie"></i><span class="tittle">热门APP ///</span><HotAppBar></HotAppBar></div>
         <div class='leftBottom radius'><i class="el-icon-time"></i><span class="tittle">驻留天数 ///</span><StayDaysPie></StayDaysPie></div>
       </el-col>
@@ -33,7 +35,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import Header from '@/components/Header/header.vue'; // @ is an alias to /src
+import Header from '@/components/Header/header.vue';
+import Progress from '@/components/Progress/progress.vue';
 import HotAppBar from '@/components/Bar/hotAppBar.vue';
 import StayDaysPie from '@/components/Pie/stayDaysPie.vue';
 import TrafficBar from '@/components/Bar/trafficBar.vue';
@@ -48,6 +51,7 @@ import Map from '@/components/Map/map.vue';
 @Component({
   components: {
       Header,
+      Progress,
       HotAppBar,
       Map,
       StayDaysPie,
